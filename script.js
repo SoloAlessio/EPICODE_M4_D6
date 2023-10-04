@@ -15,13 +15,13 @@ async function getData() {
 
 function displayTable(filteredData) {
     row.innerHTML = filteredData.map(({ name, surname,  email }) => `
-        <div class="col-4">
+        <div class="col-4 mb-3">
             ${name}
         </div>    
-        <div class="col-4">
+        <div class="col-4 mb-3">
             ${surname} 
         </div>    
-        <div class="col-4">
+        <div class="col-4 mb-3">
             ${email}
         </div>    
     `).join("")
